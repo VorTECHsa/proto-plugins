@@ -1,0 +1,24 @@
+# A TOML plugin for mise:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "spectral"
+type = "cli"
+
+[platform.linux]
+download-file = "spectral-linux-{arch}"
+
+[platform.macos]
+download-file = "spectral-macos-{arch}"
+
+[platform.windows]
+download-file = "spectral.exe"
+
+[install]
+download-url = "https://github.com/stoplightio/spectral/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "x64"
+
+[resolve]
+git-url = "https://github.com/stoplightio/spectral"

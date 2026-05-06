@@ -1,0 +1,20 @@
+# A TOML plugin for mise:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "prism"
+type = "cli"
+
+[platform.linux]
+download-file = "prism-cli-linux"
+
+[platform.macos]
+download-file = "prism-cli-macos"
+
+[platform.windows]
+download-file = "prism-cli-win.exe"
+
+[install]
+download-url = "https://github.com/stoplightio/prism/releases/download/v{version}/{download_file}"
+
+[resolve]
+git-url = "https://github.com/stoplightio/prism"
