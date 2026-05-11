@@ -1,6 +1,13 @@
 # proto-plugins
 
 [Proto](https://moonrepo.dev/proto) plugins for:
+
+- [Just](https://just.systems)
+  ```
+  proto plugin add just "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/just/plugin.toml"
+  proto install just
+  ```
+
 - [Prism](https://stoplight.io/open-source/prism)
   ```
   proto plugin add prism "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/prism/plugin.toml"
