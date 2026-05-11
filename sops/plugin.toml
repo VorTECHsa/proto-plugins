@@ -1,0 +1,26 @@
+# A TOML plugin for sops:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "sops"
+type = "cli"
+
+[platform.linux]
+download-file = "sops-v{version}.linux.{arch}"
+
+[platform.macos]
+download-file = "sops-v{version}.darwin.{arch}"
+
+[platform.windows]
+download-file = "sops-v{version}.exe"
+
+[install]
+checksum-url = "https://github.com/getsops/sops/releases/download/v{version}/sops-v{version}.checksums.txt"
+download-url = "https://github.com/getsops/sops/releases/download/v{version}/{download_file}"
+unpack = false
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/getsops/sops"
