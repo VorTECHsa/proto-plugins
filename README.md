@@ -9,7 +9,7 @@
 
 - [SOPS](https://getsops.io/)
   ```
-  proto plugin add spectral "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/sops/plugin.toml"
+  proto plugin add sops "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/sops/plugin.toml"
   proto install sops
   ```
 
