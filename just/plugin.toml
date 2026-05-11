@@ -1,0 +1,21 @@
+# A TOML plugin for just:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "just"
+type = "cli"
+
+[platform.linux]
+download-file = "just-{version}-{arch}-unknown-linux.musl.tar.gz"
+
+[platform.macos]
+download-file = "just-{version}-{arch}-apple-darwin.tar.gz"
+
+[platform.windows]
+download-file = "just-{version}-pc-windows-msvc.zip"
+
+[install]
+checksum-url = "https://github.com/casey/just/releases/download/{version}/SHA256SUMS"
+download-url = "https://github.com/casey/just/releases/download/{version}/{download_file}"
+
+[resolve]
+git-url = "https://github.com/casey/just"
