@@ -1,4 +1,4 @@
-# A TOML plugin for mise:
+# A TOML plugin for spectral:
 # https://moonrepo.dev/docs/proto/plugins#toml-plugin
 
 name = "prism"
