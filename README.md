@@ -25,3 +25,9 @@
   proto plugin add spectral "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/spectral/plugin.toml"
   proto install spectral
   ```
+
+- [Redpanda CLI](https://www.redpanda.com)
+  ```
+  proto plugin add spectral "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/rpk/plugin.toml"
+  proto install rpk
+  ```

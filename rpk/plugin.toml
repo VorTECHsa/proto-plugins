@@ -1,0 +1,25 @@
+# A TOML plugin for Redpanda CLI:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "rpk"
+type = "cli"
+
+[platform.linux]
+download-file = "rpk-linux-{arch}.zip"
+
+[platform.macos]
+download-file = "rpk-darwin-{arch}.zip"
+
+[platform.windows]
+download-file = "rpk-windows-{arch}.zip"
+
+[install]
+checksum-url = "https://github.com/redpanda-data/redpanda/releases/download/v{version}/rpk_{version}_checksums.txt"
+download-url = "https://github.com/redpanda-data/redpanda/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/redpanda-data/redpanda"
