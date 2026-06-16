@@ -4,7 +4,7 @@
 
 - [Apache Maven](https://maven.apache.org)
   ```
-  proto plugin add maven "https://raw.githubusercontent.com/vortechsa/proto-plugins/maven/maven/plugin.toml"
+  proto plugin add maven "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/maven/plugin.toml"
   proto install maven
   ```
 

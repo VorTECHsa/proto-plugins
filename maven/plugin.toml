@@ -18,6 +18,7 @@ archive-prefix = "apache-maven-{version}"
 download-file = "apache-maven-{version}-bin.zip"
 checksum-file = "apache-maven-{version}-bin.zip.sha512"
 archive-prefix = "apache-maven-{version}"
+exe-path = "bin/mvn.cmd"
 
 [install]
 checksum-url = "https://archive.apache.org/dist/maven/maven-{versionMajor}/{version}/binaries/{checksum_file}"
