@@ -1,0 +1,33 @@
+# A TOML plugin for Apache Maven:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "maven"
+type = "cli"
+
+[platform.linux]
+download-file = "apache-maven-{version}-bin.tar.gz"
+checksum-file = "apache-maven-{version}-bin.tar.gz.sha512"
+archive-prefix = "apache-maven-{version}"
+
+[platform.macos]
+download-file = "apache-maven-{version}-bin.tar.gz"
+checksum-file = "apache-maven-{version}-bin.tar.gz.sha512"
+archive-prefix = "apache-maven-{version}"
+
+[platform.windows]
+download-file = "apache-maven-{version}-bin.zip"
+checksum-file = "apache-maven-{version}-bin.zip.sha512"
+archive-prefix = "apache-maven-{version}"
+exe-path = "bin/mvn.cmd"
+
+[install]
+checksum-url = "https://archive.apache.org/dist/maven/maven-{versionMajor}/{version}/binaries/{checksum_file}"
+download-url = "https://archive.apache.org/dist/maven/maven-{versionMajor}/{version}/binaries/{download_file}"
+
+[install.exes.mvn]
+exe-path = "bin/mvn"
+primary = true
+
+[resolve]
+git-url = "https://github.com/apache/maven"
+version-pattern = "^maven-(\\d+\\.\\d+\\.\\d+)$"
