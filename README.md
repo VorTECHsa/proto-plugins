@@ -2,6 +2,12 @@
 
 [Proto](https://moonrepo.dev/proto) plugins for:
 
+- [Apache Maven](https://maven.apache.org)
+  ```
+  proto plugin add maven "https://raw.githubusercontent.com/vortechsa/proto-plugins/maven/maven/plugin.toml"
+  proto install maven
+  ```
+
 - [Just](https://just.systems)
   ```
   proto plugin add just "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/just/plugin.toml"
@@ -14,6 +20,12 @@
   proto install prism
   ```
 
+- [Redpanda CLI](https://www.redpanda.com)
+  ```
+  proto plugin add rpk "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/rpk/plugin.toml"
+  proto install rpk
+  ```
+
 - [SOPS](https://getsops.io/)
   ```
   proto plugin add sops "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/sops/plugin.toml"
@@ -24,10 +36,4 @@
   ```
   proto plugin add spectral "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/spectral/plugin.toml"
   proto install spectral
-  ```
-
-- [Redpanda CLI](https://www.redpanda.com)
-  ```
-  proto plugin add spectral "https://raw.githubusercontent.com/vortechsa/proto-plugins/master/rpk/plugin.toml"
-  proto install rpk
   ```
